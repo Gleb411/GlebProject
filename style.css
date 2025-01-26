@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1f1d1d;
+    color: #fff;
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('path/to/your/3d-object.gif') no-repeat center center/cover;
+}
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+header .buttons {
+    margin-top: 20px;
+}
+header .buttons a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: #1c1c1c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+header .buttons a:hover {
+    background-color: #00bfa5;
+}
+.portfolio, .about, .testimonials, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+.portfolio .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio .grid .card {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.portfolio .grid .card:hover {
+    transform: scale(1.1);
+}
+.portfolio .filters {
+    margin-bottom: 20px;
+}
+.portfolio .filters button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.portfolio .filters button:hover {
+    background-color: #00bfa5;
+}
+.about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input, .contact form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+.contact form button {
+    padding: 10px 20px;
+    background-color: #00ffcc;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact form button:hover {
+    background-color: #00bfa5;
+}
+.contact .social-icons a {
+    margin: 0 10px;
+    color: #00ffcc;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+.contact .social-icons a:hover {
+    transform: translateY(-5px);
+    color: #00bfa5;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+}
+footer a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.language-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+}

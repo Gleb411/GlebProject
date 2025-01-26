@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глеб - 3D-художник.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="icon"  href="nameIcon.ico">
+
+</head>
+<body>
+    <header>
+        <h1>Привет! Я Глеб, 3D-artist</h1>
+        <div class="buttons">
+            <a href="#portfolio">Мои работы</a>
+            <a href="#contact">Связаться</a>
+        </div>
+    </header>
+    <button class="language-switch" onclick="switchLanguage()">en/ru</button>
+    <section id="portfolio" class="portfolio">
+        <h2>Портфолио</h2>
+        <div class="filters">
+            <button>Персонажи</button>
+            <button>Среды</button>
+            <button>Реквизит</button>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="card1.jpg" alt="Работа 1">
+            </div>
+            <div class="card">
+                <img src="card2.jpg" alt="Работа 2">
+            </div>
+            <div class="card">
+                <img src="card3.jpg" alt="Работа 3">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>Обо мне</h2>
+        <img src="photo.jpg" alt="Глеб">
+        <p>Короткая история о тебе, инструментах (Blender, Substance Painter и т. д.), твоём стиле и вдохновении.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Контакты</h2>
+        <form>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Почта" required>
+            <textarea placeholder="Сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank" style="text-decoration: none;">Instagram</a>
+            <a href="https://artstation.com" target="_blank" style="text-decoration: none;">ArtStation</a>
+            <a href="https://discord.com" target="_blank" style="text-decoration: none;">Discord</a>
+        </div>
+    </section>
+    <footer>
+        <p>Сайт сделан с любовью к 3D-графике</p>
+        <a href="#top">Вверх</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function switchLanguage() {
+            // Add your language switching logic here
+            alert('Language switch functionality not implemented yet.');
+        }
+    </script>
+</body>
+</html>

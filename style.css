@@ -1,8 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #1f1d1d;
     color: #fff;
+}
 header {
     position: relative;
     height: 100vh;
@@ -134,14 +139,85 @@ footer a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
 }
 
-.language-switch {
+a {
+    text-decoration: none;
+}
+
+.social-icons a img {
+    margin: 100px 0px 0px 0px;
+}
+
+#info-wrapper {
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+}
+
+#info-wrapper #my-links {
+    width: 11%;
+    height: 11%;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
+    top: 3%;
+    left: 44.5%;
+}
+
+.dropbtn {
+    padding: 5px;
     cursor: pointer;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 900px;
+    bottom: 400px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 50px;
+}
+
+.dropbtn
+{
+  background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+  padding-left: 14px;
+  width: 40px;
+}
+
+.dropbtn::after {
+    background: rgba(0, 0, 0, 0) url("../icons/arrow.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 30;
+    top: 5px;
+    width: 20px;
+}
+
+.dropdown-content a:first-child
+{
+  background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+}
+
+.dropdown-content a:last-child
+{
+  background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 0 2px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

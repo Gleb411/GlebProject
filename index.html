@@ -7,17 +7,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"  href="style.css">
     <link rel="icon"  href="nameIcon.ico">
-
 </head>
 <body>
     <header>
+
+        <div class="dropdown">
+            <div class="dropbtn">RU</div>
+            <div class="dropdown-content">
+                <a href="#">RU</a>
+                <a href="#">EN</a>
+            </div>
+        </div>
+
         <h1>Привет! Я Глеб, 3D-artist</h1>
         <div class="buttons">
             <a href="#portfolio">Мои работы</a>
             <a href="#contact">Связаться</a>
         </div>
     </header>
-    <button class="language-switch" onclick="switchLanguage()">en/ru</button>
     <section id="portfolio" class="portfolio">
         <h2>Портфолио</h2>
         <div class="filters">
@@ -42,6 +49,11 @@
         <img src="photo.jpg" alt="Глеб">
         <p>Короткая история о тебе, инструментах (Blender, Substance Painter и т. д.), твоём стиле и вдохновении.</p>
     </section>
+    <section id="testimonials" class="testimonials">
+        <h2>Отзывы</h2>
+        <div class="card">"Отличная работа!" - Клиент 1</div>
+        <div class="card">"Очень доволен результатом!" - Клиент 2</div>
+    </section>
     <section id="contact" class="contact">
         <h2>Контакты</h2>
         <form>
@@ -50,10 +62,23 @@
             <textarea placeholder="Сообщение" required></textarea>
             <button type="submit">Отправить</button>
         </form>
+
+        <div id="info-wrapper">
+            <div id="my-links">
+            <p>Мои соц.сети</p>
+        </div>
+        </div>
+
         <div class="social-icons">
-            <a href="https://instagram.com" target="_blank" style="text-decoration: none;">Instagram</a>
-            <a href="https://artstation.com" target="_blank" style="text-decoration: none;">ArtStation</a>
-            <a href="https://discord.com" target="_blank" style="text-decoration: none;">Discord</a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="/logo/instagram.png" alt="Инстаграм" width="80px" height="80px">
+            </a>
+            <a href="https://artstation.com" target="_blank">
+                <img src="/logo/artstation.png" alt="ArtStation" width="80px" height="80px">
+            </a>
+            <a href="https://discord.com" target="_blank">
+                <img src="/logo/discord.png" alt="Discord" width="80px" height="80px">
+            </a>
         </div>
     </section>
     <footer>
@@ -62,11 +87,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        function switchLanguage() {
-            // Add your language switching logic here
-            alert('Language switch functionality not implemented yet.');
-        }
-    </script>
 </body>
 </html>

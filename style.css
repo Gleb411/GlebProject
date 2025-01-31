@@ -169,8 +169,8 @@ a {
 .dropdown {
     position: relative;
     display: inline-block;
-    left: 900px;
-    bottom: 400px;
+    left: 47%;
+    bottom: 42%;
 }
 
 .dropdown-content {

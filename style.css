@@ -188,7 +188,7 @@ a {
 }
 
 .dropbtn::after {
-    background: rgba(0, 0, 0, 0) url("../icons/arrow.png") no-repeat scroll center center;
+    background: rgba(0, 0, 0, 0) url("./icons/arrow.png") no-repeat scroll center center;
     content: "";
     height: 16px;
     position: absolute;
